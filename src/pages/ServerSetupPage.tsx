@@ -1,6 +1,6 @@
 import { getServerSnapshot, setServerUrl } from "@/api/serverStore";
+import { AuthBackground } from "@/components/auth/AuthBackground";
 import { BrandMark } from "@/components/BrandMark";
-import { Screen } from "@/components/Screen";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { FormField } from "@/components/ui/form-field";
@@ -32,50 +32,39 @@ export function ServerSetupPage() {
   };
 
   return (
-    <Screen
-      safeTop
-      footer={
-        <Button disabled={!canContinue} onPress={onContinue}>
-          Continue
-        </Button>
-      }
-    >
-      <View className="mb-8 mt-2">
-        <BrandMark subtitle="IT Support · Companion" />
-      </View>
-
-      <View className="mb-6">
-        <Text className="text-3xl font-semibold leading-tight text-foreground">
-          Connect to IT Help Desk
-        </Text>
-        <Text className="mt-3 text-base leading-6 text-muted-foreground">
-          Use the same server address as the desktop app. Your phone will call that API directly.
-        </Text>
-      </View>
-
-      <Card className="gap-0 p-0">
-        <View className="border-b border-border px-4 py-4">
-          <FormField label="Server host" hint="IP address or hostname, without http://">
-            <Input
-              value={host}
-              onChangeText={setHost}
-              autoCapitalize="none"
-              autoCorrect={false}
-              placeholder="192.168.1.10"
-              returnKeyType="next"
-            />
-          </FormField>
-          <FormField label="Port">
-            <Input
-              value={port}
-              onChangeText={setPort}
-              keyboardType="number-pad"
-              placeholder="3000"
-            />
-          </FormField>
+    <AuthBackground>
+      <Card className="border-white/20 bg-white/95">
+        <View className="mb-5 items-center">
+          <BrandMark subtitle="IT Support · Companion" />
         </View>
 
-        <View className="flex-row items-center justify-between px-4 py-4">
+        <Text className="text-center text-2xl font-semibold leading-tight text-foreground">
+          Connect to IT Help Desk
+        </Text>
+        <Text className="mt-2 mb-5 text-center text-sm leading-5 text-muted-foreground">
+          Use the same server address as the desktop app. Your phone will call that API directly.
+        </Text>
+
+        <FormField label="Server host" hint="IP address or hostname, without http://">
+          <Input
+            value={host}
+            onChangeText={setHost}
+            autoCapitalize="none"
+            autoCorrect={false}
+            placeholder="192.168.1.10"
+            returnKeyType="next"
+          />
+        </FormField>
+        <FormField label="Port">
+          <Input
+            value={port}
+            onChangeText={setPort}
+            keyboardType="number-pad"
+            placeholder="3000"
+          />
+        </FormField>
+
+        <View className="mb-5 flex-row items-center justify-between rounded-xl border border-border bg-muted/40 px-3 py-3">
           <View className="mr-4 flex-1">
             <Text className="font-medium text-foreground">Use HTTPS</Text>
             <Text className="mt-1 text-sm leading-5 text-muted-foreground">
@@ -89,12 +78,16 @@ export function ServerSetupPage() {
             thumbColor="#ffffff"
           />
         </View>
-      </Card>
 
-      <Text className="mt-6 text-center text-sm leading-5 text-muted-foreground">
-        Example: host <Text className="font-medium text-foreground">192.168.1.10</Text> and port{" "}
-        <Text className="font-medium text-foreground">3000</Text> for local development.
-      </Text>
-    </Screen>
+        <Button disabled={!canContinue} onPress={onContinue}>
+          Continue
+        </Button>
+
+        <Text className="mt-5 text-center text-sm leading-5 text-muted-foreground">
+          Example: host <Text className="font-medium text-foreground">192.168.1.10</Text> and port{" "}
+          <Text className="font-medium text-foreground">3000</Text> for local development.
+        </Text>
+      </Card>
+    </AuthBackground>
   );
 }
