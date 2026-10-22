@@ -54,3 +54,8 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+force compile dev with new cions: 
+cd src-tauri && cargo clean -p ithelpdesk && cd ..
+npm run tauri dev

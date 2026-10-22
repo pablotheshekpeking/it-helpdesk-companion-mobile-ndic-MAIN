@@ -13,11 +13,7 @@ import {
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const DEFAULT_IMAGES = [
-  require("../../../assets/authpics/1.jpg"),
-  require("../../../assets/authpics/2.jpg"),
-  require("../../../assets/authpics/3.jpg"),
-  require("../../../assets/authpics/4.jpg"),
-  require("../../../assets/authpics/5.jpg"),
+  require("../../../assets/authpics/1.png"),
 ] as const;
 
 const SLIDE_INTERVAL_MS = 3000;
