@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Fincra IT Support",
-    "slug": "it-helpdesk-companion-mobile",
+    "slug": "fincra-helpdesk",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -33,6 +33,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "9d9fd0e9-6e85-4f95-b6ff-f2df9e26a00f"
+      }
+    },
+    "owner": "ithelpdesk-yyy"
   }
 }
