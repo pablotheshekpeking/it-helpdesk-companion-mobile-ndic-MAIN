@@ -5,8 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #1a1a1a;
-  --primary: #006b3f;
-  --accent: #fff8db;
-  --sidebar: #f3f8f5;
+  --primary: #7434fc;
+  --accent: #ede5ff;
+  --sidebar: #f7f4fe;
   --radius: 0.625rem;
 }

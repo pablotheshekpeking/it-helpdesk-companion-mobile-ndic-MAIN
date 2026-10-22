@@ -27,12 +27,12 @@ export function TechnicianLayout() {
       <Tabs
         screenOptions={{
           headerShown: false,
-          tabBarActiveTintColor: "#006b3f",
-          tabBarInactiveTintColor: "#4a6356",
+          tabBarActiveTintColor: "#7434fc",
+          tabBarInactiveTintColor: "#5e5675",
           tabBarLabelStyle: { fontSize: 11, fontWeight: "600" },
           tabBarStyle: {
-            backgroundColor: "#f3f8f5",
-            borderTopColor: "#d5e3db",
+            backgroundColor: "#f7f4fe",
+            borderTopColor: "#e3dbf6",
             height: 84,
             paddingTop: 8,
           },

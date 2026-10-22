@@ -1,7 +1,9 @@
-import type { ReactNode } from "react";
+import { useQueryClient } from "@tanstack/react-query";
+import { useCallback, useState, type ReactNode } from "react";
 import {
   KeyboardAvoidingView,
   Platform,
+  RefreshControl,
   ScrollView,
   View,
 } from "react-native";
@@ -24,8 +26,19 @@ export function Screen({
   safeTop = false,
 }: ScreenProps) {
   const insets = useSafeAreaInsets();
+  const queryClient = useQueryClient();
+  const [refreshing, setRefreshing] = useState(false);
   const paddingTop = safeTop ? insets.top + 16 : 16;
   const paddingBottom = footer ? 16 : 28;
+
+  const onRefresh = useCallback(async () => {
+    setRefreshing(true);
+    try {
+      await queryClient.invalidateQueries();
+    } finally {
+      setRefreshing(false);
+    }
+  }, [queryClient]);
 
   const content = (
     <View
@@ -52,6 +65,14 @@ export function Screen({
             contentContainerStyle={{ flexGrow: 1 }}
             keyboardShouldPersistTaps="handled"
             showsVerticalScrollIndicator={false}
+            refreshControl={
+              <RefreshControl
+                refreshing={refreshing}
+                onRefresh={onRefresh}
+                tintColor="#7434fc"
+                colors={["#7434fc"]}
+              />
+            }
           >
             {content}
           </ScrollView>

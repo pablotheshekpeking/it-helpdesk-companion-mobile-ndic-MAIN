@@ -38,7 +38,7 @@ export function EmployeeDashboardPage() {
           accessibilityLabel="Sign out"
           className="h-10 w-10 items-center justify-center rounded-full bg-secondary"
         >
-          <LogOut size={18} color="#4a6356" />
+          <LogOut size={18} color="#5e5675" />
         </Pressable>
       </View>
 
@@ -60,19 +60,19 @@ export function EmployeeDashboardPage() {
       <Text className="mb-3 mt-8 text-base font-semibold text-foreground">Shortcuts</Text>
       <View className="gap-3">
         <Shortcut
-          icon={<Ticket size={20} color="#006b3f" />}
+          icon={<Ticket size={20} color="#7434fc" />}
           title="Tickets"
           body="View, filter, or create a request"
           onPress={() => router.push(route("/employee/tickets"))}
         />
         <Shortcut
-          icon={<Bell size={20} color="#006b3f" />}
+          icon={<Bell size={20} color="#7434fc" />}
           title="Alerts"
           body={unread.data ? `${unread.data} unread` : "You're caught up"}
           onPress={() => router.push(route("/employee/notifications"))}
         />
         <Shortcut
-          icon={<MonitorSmartphone size={20} color="#006b3f" />}
+          icon={<MonitorSmartphone size={20} color="#7434fc" />}
           title="Devices"
           body="Phones and computers linked to you"
           onPress={() => router.push(route("/employee/device"))}
@@ -101,7 +101,7 @@ function Shortcut({
           <Text className="text-base font-semibold">{title}</Text>
           <Text className="text-sm text-muted-foreground">{body}</Text>
         </View>
-        <ChevronRight size={18} color="#a3bdb0" />
+        <ChevronRight size={18} color="#b4aacd" />
       </Card>
     </Pressable>
   );

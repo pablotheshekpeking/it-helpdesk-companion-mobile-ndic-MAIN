@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "IT Help Desk",
+    "name": "Fincra IT Support",
     "slug": "it-helpdesk-companion-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,7 +9,7 @@
     "userInterfaceStyle": "light",
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#006B3F"
+        "backgroundColor": "#FFFFFF"
       },
       "predictiveBackGestureEnabled": false
     },
@@ -22,7 +22,7 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#006B3F",
+          "backgroundColor": "#FFFFFF",
           "image": "./assets/icon.png",
           "imageWidth": 200
         }

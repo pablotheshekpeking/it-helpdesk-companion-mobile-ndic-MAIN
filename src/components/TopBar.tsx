@@ -25,7 +25,7 @@ export function TopBar({
           hitSlop={8}
           className="mr-3 h-10 w-10 items-center justify-center rounded-full bg-secondary"
         >
-          <ArrowLeft size={20} color="#006b3f" />
+          <ArrowLeft size={20} color="#7434fc" />
         </Pressable>
       ) : null}
       <Text className="flex-1 text-2xl font-bold tracking-tight text-foreground" numberOfLines={1}>

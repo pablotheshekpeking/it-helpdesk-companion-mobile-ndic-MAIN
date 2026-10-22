@@ -6,7 +6,7 @@ export function Textarea({ className, ...props }: TextInputProps & { className?:
     <TextInput
       multiline
       textAlignVertical="top"
-      placeholderTextColor="#4a6356"
+      placeholderTextColor="#5e5675"
       className={cn(
         "min-h-24 rounded-lg border border-input bg-background px-3 py-3 text-base text-foreground",
         className,

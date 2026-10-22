@@ -73,9 +73,9 @@ export function LoginPage() {
               className="absolute right-3 h-10 w-10 items-center justify-center"
             >
               {showPassword ? (
-                <EyeOff size={20} color="#4a6356" />
+                <EyeOff size={20} color="#5e5675" />
               ) : (
-                <Eye size={20} color="#4a6356" />
+                <Eye size={20} color="#5e5675" />
               )}
             </Pressable>
           </View>

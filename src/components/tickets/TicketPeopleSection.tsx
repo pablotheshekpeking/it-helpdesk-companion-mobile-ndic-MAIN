@@ -54,7 +54,7 @@ export function TicketPeopleSection({
     <Card className="mb-5 p-4">
       {ConfirmHost}
       <View className="mb-3 flex-row items-center gap-2">
-        <Users size={16} color="#4a6356" />
+        <Users size={16} color="#5e5675" />
         <Text className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
           People
         </Text>

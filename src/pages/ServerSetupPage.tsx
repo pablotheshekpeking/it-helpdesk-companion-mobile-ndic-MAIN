@@ -74,7 +74,7 @@ export function ServerSetupPage() {
           <Switch
             value={https}
             onValueChange={setHttps}
-            trackColor={{ false: "#d5e3db", true: "#006b3f" }}
+            trackColor={{ false: "#e3dbf6", true: "#7434fc" }}
             thumbColor="#ffffff"
           />
         </View>
