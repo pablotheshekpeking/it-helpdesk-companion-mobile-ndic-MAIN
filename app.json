@@ -7,7 +7,11 @@
     "icon": "./assets/icon.png",
     "scheme": "ithelpdesk",
     "userInterfaceStyle": "light",
+    "ios": {
+      "bundleIdentifier": "com.fincra.ithelpdesk"
+    },
     "android": {
+      "package": "com.fincra.ithelpdesk",
       "adaptiveIcon": {
         "backgroundColor": "#FFFFFF"
       },
