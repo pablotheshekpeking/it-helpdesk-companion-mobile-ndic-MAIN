@@ -35,11 +35,11 @@ export function ServerSetupPage() {
     <AuthBackground>
       <Card className="border-white/20 bg-white/95">
         <View className="mb-5 items-center">
-          <BrandMark subtitle="IT Support · Companion" />
+          <BrandMark subtitle="NDIC Helpdesk · Companion" />
         </View>
 
         <Text className="text-center text-2xl font-semibold leading-tight text-foreground">
-          Connect to IT Help Desk
+          Connect to NDIC Helpdesk
         </Text>
         <Text className="mt-2 mb-5 text-center text-sm leading-5 text-muted-foreground">
           Use the same server address as the desktop app. Your phone will call that API directly.
@@ -74,7 +74,7 @@ export function ServerSetupPage() {
           <Switch
             value={https}
             onValueChange={setHttps}
-            trackColor={{ false: "#e3dbf6", true: "#7434fc" }}
+            trackColor={{ false: "#d9ddec", true: "#2c2f80" }}
             thumbColor="#ffffff"
           />
         </View>

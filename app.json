@@ -1,28 +1,29 @@
 {
   "expo": {
-    "name": "Fincra IT Support",
-    "slug": "fincra-helpdesk",
+    "name": "NDIC Helpdesk",
+    "slug": "ndic-helpdesk",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "scheme": "ithelpdesk",
+    "scheme": "ndichelpdesk",
     "userInterfaceStyle": "light",
     "ios": {
-      "bundleIdentifier": "com.fincra.ithelpdesk",
+      "bundleIdentifier": "com.ndic.helpdesk",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
-      "package": "com.fincra.ithelpdesk",
+      "package": "com.ndic.helpdesk",
       "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/icon.png"
+      "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-router",
@@ -30,7 +31,7 @@
         "expo-splash-screen",
         {
           "backgroundColor": "#FFFFFF",
-          "image": "./assets/icon.png",
+          "image": "./assets/splash-icon.png",
           "imageWidth": 200
         }
       ],
@@ -44,7 +45,7 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "9d9fd0e9-6e85-4f95-b6ff-f2df9e26a00f"
+        "projectId": ""
       }
     },
     "owner": "ithelpdesk-yyy"

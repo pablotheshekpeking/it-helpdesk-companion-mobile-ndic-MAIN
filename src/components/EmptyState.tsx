@@ -14,7 +14,7 @@ export function EmptyState({
   return (
     <View className="flex-1 items-center justify-center px-8 py-16">
       <View className="mb-4 h-14 w-14 items-center justify-center rounded-full bg-secondary">
-        <Icon size={26} color="#7434fc" />
+        <Icon size={26} color="#2c2f80" />
       </View>
       <Text className="text-center text-lg font-semibold text-foreground">{title}</Text>
       {body ? (

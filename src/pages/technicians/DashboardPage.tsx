@@ -33,7 +33,7 @@ export function TechnicianDashboardPage() {
           accessibilityLabel="Sign out"
           className="h-10 w-10 items-center justify-center rounded-full bg-secondary"
         >
-          <LogOut size={18} color="#5e5675" />
+          <LogOut size={18} color="#525a7a" />
         </Pressable>
       </View>
 

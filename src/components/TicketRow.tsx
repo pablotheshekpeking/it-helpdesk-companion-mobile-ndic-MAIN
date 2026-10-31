@@ -36,7 +36,7 @@ export function TicketRow({
             {[subtitle, when ? formatRelative(when) : null].filter(Boolean).join(" · ")}
           </Text>
         </View>
-        <ChevronRight size={18} color="#b4aacd" />
+        <ChevronRight size={18} color="#a3a9c9" />
       </Card>
     </Pressable>
   );

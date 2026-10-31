@@ -18,7 +18,7 @@ export function AssignmentHistorySection({ ticketId }: { ticketId: string }) {
         className="flex-row items-center justify-between"
       >
         <View className="flex-row items-center gap-2">
-          <History size={16} color="#5e5675" />
+          <History size={16} color="#525a7a" />
           <Text className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
             Assignment history
           </Text>

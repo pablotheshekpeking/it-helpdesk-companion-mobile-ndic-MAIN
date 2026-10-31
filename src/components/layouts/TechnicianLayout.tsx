@@ -23,16 +23,16 @@ export function TechnicianLayout() {
 
   return (
     <View className="flex-1 bg-background">
-      <AppHeader subtitle="IT Support · Technician" />
+      <AppHeader subtitle="NDIC Helpdesk · Technician" />
       <Tabs
         screenOptions={{
           headerShown: false,
-          tabBarActiveTintColor: "#7434fc",
-          tabBarInactiveTintColor: "#5e5675",
+          tabBarActiveTintColor: "#2c2f80",
+          tabBarInactiveTintColor: "#525a7a",
           tabBarLabelStyle: { fontSize: 11, fontWeight: "600" },
           tabBarStyle: {
-            backgroundColor: "#f7f4fe",
-            borderTopColor: "#e3dbf6",
+            backgroundColor: "#f2f4fa",
+            borderTopColor: "#d9ddec",
             height: 84,
             paddingTop: 8,
           },

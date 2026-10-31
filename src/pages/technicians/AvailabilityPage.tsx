@@ -39,7 +39,7 @@ function stateLabel(state: TechnicianAvailabilityState): string {
 const DOT_COLOR: Record<TechnicianAvailabilityState["kind"], string> = {
   available: "#10b981",
   paused: "#f59e0b",
-  away: "#5e5675",
+  away: "#525a7a",
 };
 
 function endOfToday(): Date {
@@ -94,7 +94,7 @@ function OptionRow({
         <Text className="text-base font-medium text-foreground">{title}</Text>
         <Text className="mt-0.5 text-sm leading-5 text-muted-foreground">{description}</Text>
       </View>
-      {active ? <Check size={18} color="#7434fc" /> : null}
+      {active ? <Check size={18} color="#2c2f80" /> : null}
     </Pressable>
   );
 }
@@ -175,7 +175,7 @@ export function TechnicianAvailabilityPage() {
       <View className="gap-2">
         <OptionRow
           active={state.kind === "available" && !awayFormOpen}
-          icon={<PlayCircle size={20} color="#5e5675" />}
+          icon={<PlayCircle size={20} color="#525a7a" />}
           title="Available"
           description="Receive new tickets in the rotation"
           onPress={setAvailable}
@@ -183,7 +183,7 @@ export function TechnicianAvailabilityPage() {
         />
         <OptionRow
           active={state.kind === "paused" && !awayFormOpen}
-          icon={<PauseCircle size={20} color="#5e5675" />}
+          icon={<PauseCircle size={20} color="#525a7a" />}
           title="Pause new assignments"
           description="Stay signed in but skip the rotation"
           onPress={setPaused}
@@ -191,7 +191,7 @@ export function TechnicianAvailabilityPage() {
         />
         <OptionRow
           active={state.kind === "away" || awayFormOpen}
-          icon={<CalendarClock size={20} color="#5e5675" />}
+          icon={<CalendarClock size={20} color="#525a7a" />}
           title={state.kind === "away" ? label : "Away until…"}
           description={
             state.kind === "away" && state.reason

@@ -33,7 +33,7 @@ export function LoginPage() {
     <AuthBackground>
       <Card className="border-white/20 bg-white/95">
         <View className="mb-5 items-center">
-          <BrandMark subtitle="IT Support · Companion" />
+          <BrandMark subtitle="NDIC Helpdesk · Companion" />
         </View>
 
         <Text className="text-center text-2xl font-semibold leading-tight text-foreground">
@@ -73,9 +73,9 @@ export function LoginPage() {
               className="absolute right-3 h-10 w-10 items-center justify-center"
             >
               {showPassword ? (
-                <EyeOff size={20} color="#5e5675" />
+                <EyeOff size={20} color="#525a7a" />
               ) : (
-                <Eye size={20} color="#5e5675" />
+                <Eye size={20} color="#525a7a" />
               )}
             </Pressable>
           </View>

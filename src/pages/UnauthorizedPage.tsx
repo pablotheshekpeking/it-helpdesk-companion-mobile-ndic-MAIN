@@ -12,7 +12,7 @@ export function UnauthorizedPage() {
     <AuthBackground>
       <Card className="border-white/20 bg-white/95">
         <View className="mb-5 items-center">
-          <BrandMark subtitle="IT Support · Companion" />
+          <BrandMark subtitle="NDIC Helpdesk · Companion" />
         </View>
         <Text className="text-center text-2xl font-semibold text-foreground">
           Admin accounts use the console

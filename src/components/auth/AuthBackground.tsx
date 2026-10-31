@@ -19,7 +19,7 @@ const DEFAULT_IMAGES = [
 const SLIDE_INTERVAL_MS = 3000;
 const FADE_MS = 1000;
 const ZOOM_SCALE = 1.12;
-const PRIMARY_OVERLAY = "rgba(116, 52, 252, 0.6)";
+const PRIMARY_OVERLAY = "rgba(44, 47, 128, 0.6)";
 
 type AuthBackgroundProps = {
   children: ReactNode;
